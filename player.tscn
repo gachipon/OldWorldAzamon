@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0k0modr1polx"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_g2jtq"]
+[ext_resource type="Texture2D" uid="uid://cw0y33ap8ccpk" path="res://Art/playersprite.png" id="2_5utbr"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_g2jtq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_5utbr")
+hframes = 91
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
